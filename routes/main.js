@@ -16,7 +16,7 @@ router.get('/api/about', (req, res) => {
 })
 
 router.get('/api/news', (req, res) => {
-    res.redirect('https://raw.githubusercontent.com/Zhirrr/My-SQL-Results/main/Berita.json')
+    res.redirect('https://raw.githubusercontent.com/ZhirrrMy-SQL-Results/main/Berita.json')
 })
 
 router.get('/config', (req, res) => {
@@ -24,9 +24,9 @@ router.get('/config', (req, res) => {
         status: true,
         result: {
             prefix : '/',
-            namabot: 'ZhirrrBot',
-            namaowner: 'Zhirrr',
-            instagram: 'zhirr_ajalah',
+            namabot: 'MaulanaBot',
+            namaowner: 'Maulana',
+            instagram: 'riski.pfp',
             youtube : 'Gak Punya'
         }
     }
