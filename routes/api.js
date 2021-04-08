@@ -162,7 +162,7 @@ var len = 15
 router.get('/find', async (req, res, next) => {
     var apikey = req.query.apikey
     if (!apikey) return res.json(loghandler.notparam)
-    if (apikey != 'maulanagansz) return res.json(loghandler.invalidKey)
+    if (apikey != 'zahirgans) return res.json(loghandler.invalidKey)
 
     try {
         zahirr.find()
@@ -223,7 +223,7 @@ router.get('/addapikey', (req, res, next) => {
 
     if (!apikey) return res.json(loghandler.notparam)
     if (!(status && apikeyInput && email && nomorhp && name && age && country && exp)) return res.json(loghandler.notAddApiKey)
-    if (apikey != 'maulanagansz') return res.json(loghandler.invalidKey)
+    if (apikey != 'zahitgans') return res.json(loghandler.invalidKey)
 
     try {
         zahirr.insert({
@@ -262,7 +262,7 @@ router.get('/remove', (req, res, next) => {
 
     if (!apikey) return res.json(loghandler.notparam)
     if (!(status && apikeyInput && email && nomorhp && name && age && country && exp)) return res.json(loghandler.notAddApiKey)
-    if (apikey != 'maulanagansz') return res.json(loghandler.invalidKey)
+    if (apikey != 'zahirgans') return res.json(loghandler.invalidKey)
 
     try {
         zahirr.remove({
@@ -294,7 +294,7 @@ router.get('/tiktod', async (req, res, next) => {
 
 
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if(apikeyInput != 'riskigansz') return res.json(loghandler.invalidKey)
+	if(apikeyInput != 'zahirgans') return res.json(loghandler.invalidKey)
      if (!url) return res.json(loghandler.noturl)
 
      TikTokScraper.getVideoMeta(url, options)
@@ -316,7 +316,7 @@ router.get('/tiktod/stalk', async (req, res, next) => {
         username = req.query.username
 
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if(apikeyInput != 'maulanagansz') return res.json(loghandler.invalidKey)
+	if(apikeyInput != 'zahirgans') return res.json(loghandler.invalidKey)
     if (!username) return res.json(loghandler.notusername)
 
 
@@ -341,7 +341,7 @@ router.get('/randomquote', async (req, res, next) => {
         var apikeyInput = req.query.apikey
             
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if(apikeyInput != 'maulanaganz') return res.json(loghandler.invalidKey)
+	if(apikeyInput != 'zahirgans') return res.json(loghandler.invalidKey)
 
        fetch(encodeURI(`https://python-api-zhirrr.herokuapp.com/api/randomquotes`))
         .then(response => response.json())
@@ -388,7 +388,7 @@ router.get('/short/tiny', async (req, res, next) => {
         url = req.query.url
 
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if(apikeyInput != 'maulanagans') return res.json(loghandler.invalidKey)
+	if(apikeyInput != 'zahirgans') return res.json(loghandler.invalidKey)
      if (!url) return res.json(loghandler.noturl)
 
      request(`https://tinyurl.com/api-create.php?url=${url}`, function (error, response, body) {
@@ -414,7 +414,7 @@ router.get('/base', async (req, res, next) => {
 		decode = req.query.decode,
 		apikeyInput = req.query.apikey;
 		if (!apikeyInput) return res.json(loghandler.notparam)
-		if (apikeyInput != 'maulanagans') return res.json(loghandler.invalidKey)
+		if (apikeyInput != 'zahirgans') return res.json(loghandler.invalidKey)
 		if (!type) return res.json({status: false, creator, code: 404, message: 'masukan parameter type, type yang tersedia : base64 , base32'})
 		if (type == 'base64' && encode){
 				Base("b64enc", encode)
@@ -468,7 +468,7 @@ router.get('/nulis', async (req, res, next) => {
             text = req.query.text
             
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if(apikeyInput != 'riskigans') return res.json(loghandler.invalidKey)
+	if(apikeyInput != 'zahirgans') return res.json(loghandler.invalidKey)
     if (!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
 
        fetch(encodeURI(`http://salism3.pythonanywhere.com/write/?text=${text}`))
@@ -492,7 +492,7 @@ router.get('/textmaker', async (req, res, next) => {
              apikeyInput = req.query.apikey;
         
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if(apikeyInput != 'riskigans') return res.json(loghandler.invalidKey)
+	if(apikeyInput != 'zahirgans') return res.json(loghandler.invalidKey)
         if (!theme) return res.json(loghandler.nottheme)
         if (theme != 'glitch' && theme != 'google-suggestion') return res.json(loghandler.notheme)
         if (!text) return res.json(loghandler.nottext)
@@ -582,7 +582,7 @@ router.get('/textmaker/game', async (req, res, next) => {
              apikeyInput = req.query.apikey;
         
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if(apikeyInput != 'riskigans') return res.json(loghandler.invalidKey)
+	if(apikeyInput != 'zahirgans') return res.json(loghandler.invalidKey)
         if (!theme) return res.json(loghandler.nottheme)
         if (theme != 'pubg' && theme != 'battlefield') return res.json(loghandler.notheme)
         if (!text) return res.json(loghandler.nottext)
@@ -671,7 +671,7 @@ router.get('/textmaker/senja', async (req, res, next) => {
              apikeyInput = req.query.apikey;
         
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if(apikeyInput != 'riskigans') return res.json(loghandler.invalidKey)
+	if(apikeyInput != 'zahirgans') return res.json(loghandler.invalidKey)
         if (!theme) return res.json(loghandler.nottheme)
         if (theme != 'coffee-cup' && theme != 'coffee-cup2') return res.json(loghandler.notheme)
         if (!text) return res.json(loghandler.nottext)
@@ -755,7 +755,7 @@ router.get('/kisahnabi', async (req, res, next) => {
 		apikeyInput = req.query.apikey;
 
 		if (!apikeyInput) return res.json(loghandler.notparam)
-		if (apikeyInput != 'riskigans') return res.json(loghandler.invalidKey)
+		if (apikeyInput != 'zahirgans') return res.json(loghandler.invalidKey)
 		Searchnabi(nabi)
 		.then(result => {
 			res.json({
@@ -773,7 +773,7 @@ router.get('/infogempa', async (req, res, next) => {
 	        var apikeyInput = req.query.apikey
 
 		if (!apikeyInput) return res.json(loghandler.notparam)
-		if (apikeyInput != 'ikyygans') return res.json(loghandler.invalidKey)
+		if (apikeyInput != 'zahirgans') return res.json(loghandler.invalidKey)
 		Gempa()
 		.then(result => {
 			res.json({
